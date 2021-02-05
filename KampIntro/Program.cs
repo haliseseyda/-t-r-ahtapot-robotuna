@@ -7,27 +7,30 @@ namespace KampIntro
         static void Main(string[] args)
         {
             //type safety - tip güvenliği
-            string kategoriEtiketi = "Kategori";
-            int ogrenciSayısı = 32000;
-            double faizorani = 1.45;
-            bool sistemGirisYapmisMi = true;
-            double dolarDun = 7.35;
-            double dolarBugun = 7.45;
+            //Do not repeat yourself - Kendini tekrarlama
+            //değer tutucu, alias
 
-            if (dolarDun>dolarBugun)
+            string kategoriEtiketi = "Kategoriler";
+            int ogrenciSayisi = 32000;
+            double faizOrani = 1.45;
+            bool sistemeGirisYapmisMi = true;
+            double dolarDun = 7.55;
+            double dolarBugun = 7.55;
+
+            if (dolarDun > dolarBugun)
             {
-                Console.WriteLine("Azalış butonu göster");
+                Console.WriteLine("Azalış butonu");
             }
-            else if(dolarDun<dolarBugun)
+            else if (dolarDun < dolarBugun)
             {
-                Console.WriteLine("Artış butonu göster");
+                Console.WriteLine("Artış butonu");
             }
             else
             {
-                Console.WriteLine("Değişmedi butonu göster");
+                Console.WriteLine("değişmedi butonu");
             }
 
-            if (sistemGirisYapmisMi == true)
+            if (sistemeGirisYapmisMi == true)
             {
                 Console.WriteLine("Kullanıcı ayarları butonu");
             }

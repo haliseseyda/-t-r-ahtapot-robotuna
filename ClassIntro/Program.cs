@@ -24,6 +24,11 @@ namespace ClassIntro
             kurs3.Egitmen = "Berkay Bilgin";
             kurs3.IzlenmeOrani = 80;
 
+            Kurs kurs4 = new Kurs();
+            kurs4.KursAdi = "C++";
+            kurs4.Egitmen = "Murat Kurtboğan";
+            kurs4.IzlenmeOrani = 100;
+
             //Console.WriteLine(kurs1.KursAdi + " : " + Kurs.Egitmeni);
 
             Kurs[] kurslar = new Kurs[] { kurs1, kurs2, kurs3 };
